@@ -1,0 +1,87 @@
+body {
+    font-family: sans-serif;
+    background-color: #f8f9fa; /* Light Gray Background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    overflow: hidden; /* Prevent scrollbars during particle animation */
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place particles behind content */
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px; /* Increased padding */
+    border-radius: 10px; /* Slightly larger radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* More pronounced shadow */
+    width: 90%;
+    max-width: 600px; /* Increased max-width */
+    z-index: 1; /* Ensure container is above particles */
+}
+
+.container h1 {
+    color: #007bff; /* Bootstrap primary color */
+    text-align: center;
+    margin-bottom: 30px; /* Increased margin */
+}
+
+.input-group {
+    margin-bottom: 25px; /* Increased margin */
+}
+
+#taskInput {
+    border: 1px solid #ced4da; /* Bootstrap input border */
+}
+
+#addTaskBtn {
+    background-color: #28a745; /* Bootstrap success color */
+    border-color: #28a745;
+}
+
+#addTaskBtn:hover {
+    background-color: #218838; /* Darker green on hover */
+    border-color: #1e7e34;
+}
+
+#taskList {
+    list-style: none;
+    padding: 0;
+}
+
+#taskList li {
+    background-color: #e9ecef; /* Lighter gray for list items */
+    padding: 12px 15px; /* Increased padding */
+    margin-bottom: 8px; /* Increased margin */
+    border-radius: 5px; /* Slightly larger radius */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #dee2e6; /* Add border */
+}
+
+#taskList li.completed {
+    text-decoration: line-through;
+    background-color: #d4edda; /* Bootstrap success background for completed */
+    color: #155724; /* Bootstrap success text color for completed */
+}
+
+#taskList li button {
+    background-color: #dc3545; /* Bootstrap danger color */
+    border-color: #dc3545;
+    color: #fff;
+    padding: 6px 12px; /* Adjusted padding */
+    border-radius: 5px; /* Slightly larger radius */
+    cursor: pointer;
+}
+
+#taskList li button:hover {
+    background-color: #c82333; /* Darker red on hover */
+    border-color: #bd2130;
+}
